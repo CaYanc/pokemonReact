@@ -1,0 +1,34 @@
+@use 'variables' as v;
+
+.btn{
+    background-color: v.$color1;
+    color: #fff;
+    font-size: 35px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .1s;
+   
+}
+
+.content-btn{
+    position: relative;
+}
+
+.btn_shadow{
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    background-color: v.$color2;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.btn:active{
+    transform: translateY(4px);
+}
